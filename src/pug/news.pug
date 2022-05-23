@@ -1,0 +1,85 @@
+doctype html
+html(lang="en")
+    head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title 最新情報
+      
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Quicksand:wght@400;500&display=swap")
+      link(rel="stylesheet", href="css/style.css")
+      link(rel="stylesheet", href="https://use.typekit.net/lnd2ehr.css")
+      link(rel="stylesheet", href="css/animate.css")
+      link(rel="stylesheet", href="css/animate/animate.css")
+      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+      //-favicon here
+      link(rel="shortcut icon", style="image/png", href="img/favicon.svg")
+      script(src="js/app.js")   
+      script(src="js/wow.min.js") 
+      script(type="text/javascript") new WOW().init();
+    body 
+      include _header
+      .container 
+        .back
+            marquee(behavior="", direction="").text lastest info
+        .front.wow.animate__zoomIn    
+            h1 最新情報
+            p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+              |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+      section.news 
+        .news__boxs
+          .news__box 
+            .news__img
+              img(src="img/news.svg", alt="news")
+            .news__text 
+              .news__title 
+                p お知らせ
+                span 2021.2.3
+              .news__detail
+                h2 なんとかなんとかなんとか！
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+          .news__box 
+            .news__img
+              img(src="img/news.svg", alt="news")
+            .news__text 
+              .news__title 
+                p お知らせ
+                span 2021.2.3
+              .news__detail
+                h2 なんとかなんとかなんとか！
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+          .news__box 
+            .news__img
+              img(src="img/news.svg", alt="news")
+            .news__text 
+              .news__title 
+                p お知らせ
+                span.news__times 2021.2.3
+              .news__detail
+                h2 なんとかなんとかなんとか！
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+
+          .pagination
+            img(src="img/prev.svg", alt="prev")
+            p.pagination__active 1
+            p 2
+            p 3
+            img(src="img/next.svg", alt="prev")
+
+
+        .category 
+          .category__box
+            p.category__title カテゴリー
+            p.category__news.category__font お知らせ
+            p.category__twitter.category__font Twitter
+            p.category__instagram.category__font Instagram
+      .exchange
+        .exchange__text
+          h3 まずは気軽に無料相談してみませんか？
+          p お悩みやご相談があればお気軽にご相談ください。
+
+        button.btn 無料相談はこちら
+            span.btn__arrow 
+              img(src="img/arrow-left.svg", alt="")
+      include _footer  
+

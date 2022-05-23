@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  height: 200vh;
+  margin: auto auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.container .back {
+  position: absolute;
+}
+.container .back .text {
+  font-family: "elevon", sans-serif;
+  font-size: 294px;
+  opacity: 0.6;
+  font-weight: 700;
+  color: #cbf3f2;
+}
+.container .front {
+  text-align: center;
+  z-index: 999;
+  margin-top: 10%;
+}
+.container .front h1 {
+  font-size: 50px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #15c2c4;
+  margin-bottom: 5%;
+}
+.container .front p {
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  line-height: 2;
+}
+
+main .container-wrap {
+  width: 100%;
+  background: #15c2c4;
+}
+main .container-wrap .container-content {
+  text-align: center;
+}
+main .container-wrap .container-content nav {
+  width: 100%;
+  padding: 40px 0;
+}
+main .container-wrap .container-content nav ul {
+  width: calc(100% - 370px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1% 0;
+  background-color: #fff;
+  border: 2px #000 solid;
+  border-radius: 10px;
+}
+main .container-wrap .container-content nav ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+main .container-wrap .container-content nav ul li:not(:last-child)::after {
+  content: "";
+}
+main .container-wrap .container-content nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+main .container-wrap .container-content h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 2em;
+  width: 732px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+main .container-wrap .container-content p {
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  line-height: 3;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+main .section {
+  width: 100%;
+  padding: 10% 0;
+}
+main .section .container-section {
+  text-align: center;
+}
+main .section .container-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #15c2c4;
+  margin-bottom: 4%;
+}
+main .section .container-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+main .section .container-box .border-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 263px;
+  height: 263px;
+  border: 3px solid #15c2c4;
+  border-radius: 100%;
+}
+main .section .container-box .border-box span {
+  font-size: 117px;
+  font-weight: bold;
+  -webkit-text-stroke: 2px #ffe600;
+  color: #fff;
+  position: absolute;
+  top: -100px;
+}
+main .section .container-box .border-box p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #15c2c4;
+  text-align: center;
+  padding: 20px;
+}

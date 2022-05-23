@@ -1,0 +1,291 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Quicksand:wght@400;500&display=swap")
+    link(rel="stylesheet", href="https://use.typekit.net/lnd2ehr.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/animate/animate.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    link(rel="stylesheet", href="css/style.css")
+
+    //-favicon here
+    link(rel="shortcut icon", style="image/png", href="img/favicon.svg")
+    script(src="./js/app.js")   
+    script(src="js/wow.min.js") 
+    script(type="text/javascript") new WOW().init();
+
+    title IT19
+  body
+    include _header
+    main 
+      .wrapper 
+        img.people.wow.animate__fadeInDown(src="img/people.png", alt="")
+        img.text.wow.animate__zoomIn(data-wow-delay=".5s" src="img/text.png", alt="")
+        .bg
+          h4.bg__news IT19 NEWS
+          p.bg__times 2021/2/3
+          p.bg__text 
+            marquee(behavior="", direction="") 最新情報入ります。最新情報入ります。最新情報入ります。最新情報入ります。
+          img.bg__unit-icon(src="img/arrow-left.svg", alt="")
+
+        img.wrapper__star(src="img/star.png", alt="star")  
+      div.bg__video
+        video.bg__content(autoplay muted loop)
+          source(src="img/FV動画.mp4" type="video/mp4")
+                    
+      section
+        .whatit19
+          h3.whatit19__h3.wow.animate__fadeInUp
+            span “IT業界とは？”から学べるITの塾<br>
+            span IT19
+
+          p.whatit19__text.wow.animate__fadeInUp
+            |IT19とは、ITインフラについて学んでいただくことでITインフラの技術者を増やし、IT業界を盛り上げていき<br/>たいという思いを実現した教育関連サービスです。IT19を通して学んだことを未来へ繋いでいき、より良い世<br/>の中を作るために、あなたも「ITインフラを支える1人 」になりませんか？
+          .row-card.wow.animate__fadeInUp
+            .card
+              .card__side.card__side--front
+                img(src="img/side-1.png", alt="")
+                p ITってなに？
+                span What is IT?
+              .card__side.card__side--back
+                p ITとは、Information Technology (インフォメーションテクノロジー )の略で、テキスト・画像・動画・音声などをデジタル情報として扱う技術の総称です。
+            .card
+              .card__side.card__side--front
+                img(src="img/side-2.png" alt="")
+                p ITインフラってなに？
+                span What is infra?
+              .card__side.card__side--back
+                p ITインフラとはシステムを稼働させるにあたり基盤となるコンピューターやサーバーなどの機器、OS やデータベース、LAN などのネットワークの事をさします。これらはIT システムの土台となる部分を支えています。
+            .card
+              .card__side.card__side--front
+                img(src="img/side-3.png" alt="")
+                p IT19ってなに？
+                span What is IT19?
+              .card__side.card__side--back 
+                p “19”と“塾”の語呂合わせで“IT19”と命名しました。「1人の講師」に対し「最大9人の生徒」という授業スタイルを基本とした、少人数制のIT塾です。
+
+          a(href="it19.html")
+            button.btn もっと見る
+              span.btn__arrow 
+                img(src="img/arrow-left.svg", alt="")
+      section 
+        .dekikoto  
+          .content-top.wow.animate__fadeInUp
+            span IT19で
+            h3 できること
+            p SERVICE INFO
+          .content-txt.wow.animate__fadeInUp IT19で実現することができるカリキュラムをご説明いたします。<br/>
+            |個々で学ぶことはもちろん、社員の全体研修などにもご利用いただくことが可能です。
+          ul.wow.animate__fadeInUp 
+            li  
+              a(href="")
+                .img_area 
+                  img(src="img/index-1.png", alt="")
+                .text_area  
+                  h2 資格取得
+                  p 吾輩は猫である。名前はまだ無い。<br>
+                    |どこで生れたかとんと見当がつかぬ
+            li  
+              a(href="")
+                .img_area 
+                  img(src="img/index-2.png", alt="")
+                .text_area  
+                  h2 ITのこと
+                  p 吾輩は猫である。名前はまだ無い。<br>
+                    |どこで生れたかとんと見当がつかぬ
+            li  
+              a(href="")
+                .img_area 
+                  img(src="img/index-3.png", alt="")
+                .text_area  
+                  h2 マネジメント研修
+                  p 吾輩は猫である。名前はまだ無い。<br>
+                    |どこで生れたかとんと見当がつかぬ
+          a(href="service.html")
+            button.btn もっと見る
+              span.btn__arrow 
+                img(src="img/arrow-left.svg", alt="") 
+      section 
+        .IT19
+          .content-top
+            h3 IT19受講の流れ
+            span COURSE FLOW
+          .content-txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+                      |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          .wrap-box 
+            .content-box 
+              img(src="img/Mask-group.png", alt="")
+              .txt 
+                h1 受講
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+            i.fa.fa-caret-down
+
+          .wrap-box 
+            .content-box 
+              img(src="img/Mask-group_2.png", alt="")
+              .txt 
+                h1 半年で成長!
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ 
+            i.fa.fa-caret-down
+
+          .wrap-box
+            .content-box
+              img(src="img/Mask-group_3.png", alt="")
+              .txt 
+                h1 職を手に
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+      section 
+        .container-feature
+          
+          .box-feature
+            .back   
+              p feature
+            .front 
+              .content-h3 
+                h3 IT19の特長
+                span FEATURE
+                .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+                    |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+              
+              .wrap-box-feature 
+                
+                .content-box.feature_1
+                  span 01
+                  img(src="img/feature_1.png", alt="")
+                  h3 技術者指導
+                  p 講師は全員現役で現場で働いている技術者です。その為、リアルタイムの現場の話などを交えて学ぶことが可能です。
+                .content-box.feature_2
+                  span 02
+                  img(src="img/feature_2.png", alt="")
+                  h3 実機使用
+                  p 実際の機器を使用して演習を行います。座学で学んだ知識を元に手を動かすため、身体で覚えることができより深く理解が出来ます。
+                .content-box.feature_3
+                  span 03
+                  img(src="img/feature_3.png", alt="")
+                  h3 いつでも学習可能
+                  p ネットワークに接続出来る場所であれば、いつでもどこでも、それぞれの進捗に合わせて学習が可能です。
+        .section-bottom
+          .section-bottom-txt
+            h3 まずは気軽に無料相談してみませんか？
+            p お悩みやご相談があればお気軽にご相談ください。
+
+          a(href="register.html") 
+            button.btn 無料相談はこちら
+              span.btn__arrow 
+                img(src="img/arrow-left.svg", alt="") 
+
+      section.section-two
+        .content-txt.wow.animate__fadeInUp
+          h3 授業方法
+          span CLASS METHODS
+          .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+            |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+
+
+        #carouselExampleIndicators.carousel.slide(data-bs-ride="carousel")
+          .carousel-indicators
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1").active
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")
+          .carousel-inner
+            .carousel-item.active
+              .carousel-item-content
+                .content-txt
+                  h3 eラーニング
+                  span インターネットを利用した学習形態
+                  .txt.text-none eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。
+                
+                img(src="img/index-4.png", alt="")
+            .carousel-item
+              .carousel-item-content
+                .content-txt
+                  h3 eラーニング
+                  span インターネットを利用した学習形態
+                  .txt.text-none eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。
+                
+                img(src="img/index-5.png", alt="")
+            .carousel-item
+              .carousel-item-content
+                .content-txt
+                  h3 eラーニング
+                  span インターネットを利用した学習形態
+                  .txt.text-none eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。
+                
+                img(src="img/index-5.png", alt="")
+          button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev").carousel-control-prev.prev
+            i.fa.fa-caret-left
+          button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next").carousel-control-next.next
+            i.fa.fa-caret-right
+              
+      .container-three
+        .border-box 
+          .box-content 
+            h2 講師紹介
+            img(src="img/Mask-group_4.png", alt="")
+            i.fa.fa-caret-right
+        .border-box 
+          .box-content 
+            h2 講師紹介
+            img(src="img/Mask-group_5.png", alt="")
+            i.fa.fa-caret-right
+      //- Latest Info
+      section.latest-info.wow.animate__fadeInUp 
+        h3 最新情報
+        span LATEST INFO
+        .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+            |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+        .wrap-news 
+          article 
+            .newsWrapback
+              .container-news 
+                .news-img 
+                  img(src="img/news.svg", alt="news")
+                .news-content 
+                  .news-date 
+                    h2 お知らせ
+                    p 2021.2.3
+                  .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所で
+          article 
+            .newsWrapback
+              .container-news 
+                .news-img 
+                  img(src="img/news.svg", alt="news")
+                .news-content 
+                  .news-date 
+                    h2 お知らせ
+                    p 2021.2.3
+                  .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所で
+
+        a(href="news.html")  
+          button.btn もっと見る
+            span.btn__arrow 
+              img(src="img/arrow-left.svg", alt="")
+
+
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+      script(src="js/app.js")
+      script(src="js/question.js") 
+      
+    include _footer      
+
+          
+      
+        
+
+                
+
+
+
+        
+          
+
+      
+          
+

@@ -1,0 +1,208 @@
+.service {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    overflow-x: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__boxs {
+    width: 100%;
+    padding: 3rem;
+    // height: 510px;
+    @media screen and (max-width: 500px) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      padding: 2rem;
+    }
+  }
+  &__box {
+    position: relative;
+    text-align: center;
+    img {
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        width: 100%;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 8rem;
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+      margin: 2rem;
+    }
+  }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    div {
+      width: 70px;
+      height: 70px;
+      margin-right: 2rem;
+      background: $color-white;
+      box-shadow: 6px 6px 0 $color-primary;
+      text-align: center;
+      @media screen and (max-width: 500px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    span {
+      font-size: 34px;
+      font-weight: bold;
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        font-size: 2rem;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+// === SCHEDULE === //
+.schedule {
+  @media screen and (max-width: 500px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__title {
+    text-align: center;
+    h3 {
+      font-size: 4rem;
+      font-weight: bold;
+      padding-bottom: 3rem;
+      @media screen and (max-width: 500px) {
+        font-size: 28px;
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      margin: auto;
+      width: 90%;
+      font-size: 1.6rem;
+      font-weight: medium;
+      padding-bottom: 3rem;
+      @media screen and (max-width: 500px) {
+        width: 90%;
+        font-size: 1.2rem;
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &__table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+// ===TABLE=== //
+.table__title {
+  padding-bottom: 2.5rem;
+  position: relative;
+  h3 {
+    font-size: 3rem;
+    font-weight: 400;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      font-size: 2.4rem;
+    }
+  }
+}
+.table__title span:nth-child(1) {
+  position: absolute;
+  top: 1.5rem;
+  left: -4rem;
+  display: inline-block;
+  background: url(../img/polygon-left.svg) no-repeat;
+  width: 4rem;
+  height: 4rem;
+}
+.table__title span:nth-child(2) {
+  position: absolute;
+  top: 1.5rem;
+  right: -4rem;
+  display: inline-block;
+  background: url(../img/polygon-right.svg) no-repeat;
+  width: 4rem;
+  height: 4rem;
+}
+table,
+th,
+td {
+  border: 1px solid $color-black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th,
+td {
+  padding: 2rem 6rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 500px) {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 1023px) {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+tr td:not(:last-child) {
+  font-weight: bold;
+}
+.table {
+  &__th--row {
+    background-color: rgba($color-secondary, 0.9);
+  }
+  &__th--column {
+    background-color: rgba($color-primary, 0.9);
+    color: $color-white;
+    font-family: $font-display-3;
+    font-weight: bold;
+  }
+}
+.line {
+  border-bottom: 1px dashed $color-black;
+  width: 100%;
+  margin: 5rem auto;
+}

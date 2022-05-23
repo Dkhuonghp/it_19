@@ -1,0 +1,70 @@
+
+header.header#myHeader
+  .header__sidebar#header__sidebar 
+    .header__logo
+
+      a(href="index.html") 
+        img.header__logo-img(src="img/logo.svg", alt="Logo")
+    ul.header__nav 
+      li.header__item 
+        a.header__link(href="it19.html") IT19とは
+      li.header__item 
+        a.header__link(href="service.html") できること
+      li.header__item 
+        a.header__link(href="method.html") 授業方法
+      li.header__item 
+        a.header__link(href="news.html") 最新情報
+      li.header__item 
+        a.header__link(href="contact.html") お問い合わせ
+      li.header__item-1 
+        a.header__link-1(href="register.html") 応募してみる
+  
+    //- hamburger menu
+    .mobile__menu
+        a(href="index.html") 
+          img.logophone(src="img/logophone.svg", alt="")
+        
+        input#toggle(type="checkbox")
+
+        label.hamburger(for="toggle")
+          img(src="img/bar.svg", alt="")
+          
+        //- <!--Hamburger navigation-->
+        .hamburger__nav                
+          .hamburger__nav--wrapper     
+            nav.hamburger__nav--items          
+              li.header__item-1 
+                  a.header__link-1(href="register.html") 応募してみる
+              li.header__item-2
+                  a(href="register.html") 無料相談はこちら
+                  i.fa.fa-caret-right
+                  
+              
+                
+                
+              li.header__item  
+                <a href="it19.html">IT19とは</a>
+              li.header__item 
+                <a href="service.html">できること</a>
+              li.header__item  
+                <a href="method.html">授業方法</a>
+              li.header__item 
+                a(href="news.html") 最新情報
+              li.header__item 
+                a(href="contact.html") お問い合わせ
+              a(href="index.html") 
+                img(src="img/logo.svg", alt="").logo-bottom
+              address 
+                p.address_1  住所
+                p.address_2 〒541-0052 大阪府大阪市中央区安土町2-2-15 ハ<br>ウザー堺筋本町駅前ビル603号
+            
+
+              .icon-bottom
+                img(src="img/twitter.svg", alt="")
+                img(src="img/facebook.svg", alt="")
+                    
+                    
+
+script(src="js/app.js") 
+
+
